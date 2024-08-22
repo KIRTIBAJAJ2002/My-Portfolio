@@ -79,6 +79,18 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'News Feed Aggregator',
+      description: `Designed and implemented ETL pipelines for a news app, ensuring efficient data processing and integration.
+Created robust handlers to manage various news providers, standardizing data collection and processing workflows.
+Preprocessed and stored data in SQL, leveraging efficient database management.`,
+      link: 'https://github.com/bt-labs-edu/news_feed_api', // Replace with actual link if available
+    },
+    {
+      title: 'Taxkiller (Ongoing)',
+      description: `An ongoing project aimed at automating tax calculations and filings using advanced algorithms and machine learning techniques.`,
+      link: 'https://github.com/your-username/taxkiller', // Replace with actual link if available
+    },
+    {
       title: 'Web Scraping',
       description: `Successfully managed Web Scraping of the Flipkart website using Requests, BS4, Python, and Flask.
 Extracted the list of reviews for any product that is to be displayed.
@@ -86,16 +98,15 @@ Tech Used: Requests, BS4, Python, Flask.`,
       link: 'https://github.com/KIRTIBAJAJ2002/Project1-Scraper-beanstalk-deployment',
     },
     {
-      title: 'Web Portfolio Web Developer',
-      description: `The script sends resume details to an LLM model to convert the resume info into JSON format, saves formatted data to a new file, and deploys a portfolio link.
-Tech Used: Streamlit, AWS Lambda, LangChain, FastAPI, TensorFlow.`,
-      link: 'https://github.com/your-username/web-portfolio-project',
+      title: 'Chatbot (LLM)',
+      description: `Developed a chatbot that takes the PDF of user manuals and answers questions prompted by the user. Utilized Retrieval-Augmented Generation (RAG) with Generalized AI.`,
+      link: 'https://github.com/KIRTIBAJAJ2002/Chatbot_with_RAG', // Replace with actual link if available
     },
     {
       title: 'Text Summarizer',
       description: `Implemented a robust and efficient text summarization algorithm to condense large documents into concise summaries. Calculates BLEU Score and fine-tunes the model.
 Tech Used: TensorFlow, NLP, Preprocessing.`,
-      link: 'https://github.com/your-username/text-summarizer',
+      link: 'https://github.com/KIRTIBAJAJ2002/Text-Summerizer',
     },
     {
       title: 'Diamond Price Prediction',
@@ -107,25 +118,11 @@ Tech Used: Pandas, Numpy, Flask, Seaborn, Scikit-learn, Docker, AWS, Linear Regr
       title: 'Insurance Premium Prediction',
       description: `Developed a machine learning system for predicting insurance premiums with 86% accuracy using gradient boosting.
 Conducted data collection, cleaning, preprocessing, and applied statistics for prediction.`,
-      link: 'https://github.com/your-username/insurance-premium-prediction', // Replace with actual link if available
+      link: 'https://github.com/KIRTIBAJAJ2002/KIRTIINTERNSHIPPROJECT', // Replace with actual link if available
     },
-    {
-      title: 'Taxkiller (Ongoing)',
-      description: `An ongoing project aimed at automating tax calculations and filings using advanced algorithms and machine learning techniques.`,
-      link: 'https://github.com/your-username/taxkiller', // Replace with actual link if available
-    },
-    {
-      title: 'Chatbot (LLM)',
-      description: `Developed a chatbot that takes the PDF of user manuals and answers questions prompted by the user. Utilized Retrieval-Augmented Generation (RAG) with Generalized AI.`,
-      link: 'https://github.com/your-username/chatbot-llm', // Replace with actual link if available
-    },
-    {
-      title: 'News Feed Aggregator',
-      description: `Designed and implemented ETL pipelines for a news app, ensuring efficient data processing and integration.
-Created robust handlers to manage various news providers, standardizing data collection and processing workflows.
-Preprocessed and stored data in SQL, leveraging efficient database management.`,
-      link: 'https://github.com/your-username/news-feed-aggregator', // Replace with actual link if available
-    },
+    
+    
+ 
   ];
 
   const visualizationProjects = [
@@ -139,7 +136,7 @@ Visualized the data using Power BI and Tableau to create interactive dashboards.
       title: 'Zomato Sales Analysis',
       description: `Performed a comprehensive analysis of Zomato's sales data to uncover key trends and insights.
 Visualized the findings using Power BI, providing actionable insights for decision-making.`,
-      link: 'https://github.com/your-username/zomato-sales-analysis', // Replace with actual link if available
+      link: 'https://github.com/KIRTIBAJAJ2002/Zomato_Sales_Analysis', // Replace with actual link if available
     },
   ];
 

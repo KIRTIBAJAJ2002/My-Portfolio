@@ -45,16 +45,15 @@ const SkillCategory = styled.p`
 
 const Skills = () => {
   const skills = [
-    { name: 'Python (Pandas, Numpy, Scipy, Scikit)', category: 'Programming Languages & Libraries' },
-    { name: 'TensorFlow/Keras', category: 'Programming Languages & Libraries' },
-    { name: 'Machine Learning, MLOps', category: 'Machine Learning & MLOps' },
-    { name: 'Natural Language Processing (NLP)', category: 'Machine Learning & MLOps' },
-    { name: 'Power BI, Tableau, MS-Excel', category: 'Data Visualization' },
-    { name: 'Accounting, CFS', category: 'Finance' },
-    { name: 'Git', category: 'Version Control' },
-    { name: 'Docker, AWS', category: 'DevOps & Cloud' },
-    { name: 'SQL, MongoDB, Supabase', category: 'Databases' },
+    { name: 'Python (Pandas, Numpy, Scipy, TensorFlow/Keras)', category: 'Programming Languages & Libraries' },
+    { name: 'Machine Learning,NLP', category: 'Machine Learning' },
     { name: 'FastAPI, Flask, Streamlit', category: 'Web-based Frameworks' },
+    { name: 'Docker, AWS', category: 'DevOps & Cloud' },
+    { name: 'Git', category: 'Version Control' },
+    { name: 'Power BI, Tableau, MS-Excel', category: 'Data Visualization' },
+    { name: 'SQL, MongoDB', category: 'Databases' },
+    { name: 'Accounting,Finance', category: 'Finance' },
+
   ];
 
   return (

@@ -23,7 +23,7 @@ const NavLink = styled(motion.a)`
 const Header = () => {
   return (
     <Nav>
-      <h1>Your Name</h1>
+      <h1>Kirti Bajaj</h1>
       <div>
         <NavLink whileHover={{ scale: 1.1 }} href="#about">About</NavLink>
         <NavLink whileHover={{ scale: 1.1 }} href="#experience">Experience</NavLink>

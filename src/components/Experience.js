@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { FaChevronDown } from 'react-icons/fa'; // Import the chevron icon
 
 const ExperienceSection = styled.section`
   padding: 4rem 2rem;
@@ -72,12 +73,26 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: 'Data Scientist Intern, Biyani Technologies PVT LTD (04/2024–07/2024)',
-      description: [
-        'Successfully integrated text-to-speech functionality into the company\'s software, enhancing accessibility and user experience.',
-        'Implemented a news aggregator for kids.',
-        'Developed a chatbot for software using Python, Langchain, OpenAI, RAG, Vector Database, Embeddings, and Streamlit.',
-        'Web-scraped various college websites for lead generation.',
+      title: 'Data Scientist, Biyani Technologies PVT LTD 04/2023–Present',
+      period: '04/2023–present',
+      details: [
+        
+        {
+          title: 'Data Scientist (09/2023 - Present)',
+          description: [
+            'Implemented a news aggregator for kids.',
+            'Developed a chatbot for software using Python, Langchain, OpenAI, RAG, Vector Database, Embeddings, and Streamlit.',
+            'Worked in the company’s internal under-development projects.',
+          ],
+        },
+        {
+          title: 'Data Scientist Intern (04/2023 - 09/2023)',
+          description: [
+            'Web-scraped various college websites for lead generation.',
+            'Successfully integrated text-to-speech functionality into the company\'s software, enhancing accessibility and user experience.',
+
+          ],
+        },
       ],
     },
     {
@@ -88,7 +103,7 @@ const Experience = () => {
       ],
     },
     {
-      title: 'Jr. Financial Analyst, P Maloo & Associates (CA Firm) (07/2022-08/2023)',
+      title: 'Jr. Financial Analyst, P Maloo & Associates (07/2022-08/2023)',
       description: [
         'Conducted financial analysis on balance sheets, income statements, and cash flow statements to extract critical insights.',
         'Led financial audits, ensuring data accuracy and promptly addressing discrepancies.',
@@ -105,18 +120,38 @@ const Experience = () => {
           <ExperienceCard key={index} onClick={() => toggleExperience(index)}>
             <ExperienceHeader>
               <ExperienceCardTitle>{experience.title}</ExperienceCardTitle>
-              <DropdownIcon isOpen={openExperience === index}>⌄</DropdownIcon>
+              <DropdownIcon isOpen={openExperience === index}>
+                <FaChevronDown />
+              </DropdownIcon>
             </ExperienceHeader>
             {openExperience === index && (
-              <ExperienceItemText
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                transition={{ duration: 0.5 }}
-              >
-                {experience.description.map((item, idx) => (
-                  <ExperienceItem key={idx}>{item}</ExperienceItem>
-                ))}
-              </ExperienceItemText>
+              <>
+                {experience.details
+                  ? experience.details.map((detail, idx) => (
+                      <ExperienceItemText
+                        key={idx}
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        transition={{ duration: 0.5 }}
+                      >
+                        <h4>{detail.title}</h4>
+                        {detail.description.map((item, subIdx) => (
+                          <ExperienceItem key={subIdx}>{item}</ExperienceItem>
+                        ))}
+                      </ExperienceItemText>
+                    ))
+                  : experience.description && (
+                      <ExperienceItemText
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        transition={{ duration: 0.5 }}
+                      >
+                        {experience.description.map((item, idx) => (
+                          <ExperienceItem key={idx}>{item}</ExperienceItem>
+                        ))}
+                      </ExperienceItemText>
+                    )}
+              </>
             )}
           </ExperienceCard>
         ))}
