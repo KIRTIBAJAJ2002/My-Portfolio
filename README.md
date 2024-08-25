@@ -5,5 +5,3 @@ https://kirtibajaj2002.github.io/My-Portfolio/
 
 
 
-this is my app
-this is not my app

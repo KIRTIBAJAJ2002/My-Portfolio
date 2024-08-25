@@ -8,13 +8,13 @@ const HeroSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('/path-to-your-background-image.jpg') no-repeat center center/cover;
-  color: #000; /* Change text color to black */
+  background: url('/path-to-your-background-image.jpg') no-repeat center/cover;
+  color: #000;
   text-align: center;
 `;
 
 const HeroContent = styled.div`
-  max-width: 800px; /* Adjusted for more text */
+  max-width: 800px;
   padding: 1rem;
 `;
 
@@ -49,39 +49,37 @@ const ResumeButton = styled.a`
   }
 `;
 
-const Hero = () => {
-  return (
-    <HeroSection>
-      <HeroContent>
-        <HeroTitle
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          Hello, I'm Kirti Bajaj
-        </HeroTitle>
-        <HeroSubtitle
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        >
-          Data Scientist 
-        </HeroSubtitle>
-        <SummaryText
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 }}
-        >
-          A dynamic data scientist and financial analyst adept at leveraging Python programming and machine
-          learning techniques to drive impactful solutions. With a strong foundation in data analysis and visualization
-          tools such as Power BI and machine learning (NLP).
-        </SummaryText>
-        <ResumeButton href="/path-to-your-resume.pdf" download="Your_Name_Resume.pdf">
-          Download Resume
-        </ResumeButton>
-      </HeroContent>
-    </HeroSection>
-  );
-};
+const Hero = () => (
+  <HeroSection>
+    <HeroContent>
+      <HeroTitle
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        Hello, I'm Kirti Bajaj
+      </HeroTitle>
+      <HeroSubtitle
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
+        Data Scientist 
+      </HeroSubtitle>
+      <SummaryText
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
+        A dynamic data scientist and financial analyst adept at leveraging Python programming and machine
+        learning techniques to drive impactful solutions. With a strong foundation in data analysis and visualization
+        tools such as Power BI and machine learning (NLP).
+      </SummaryText>
+      <ResumeButton href="/Kirti J Bajaj Resume.pdf" download="Kirti Resume.pdf">
+        Download Resume
+      </ResumeButton>
+    </HeroContent>
+  </HeroSection>
+);
 
 export default Hero;

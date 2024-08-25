@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { FaChevronDown } from 'react-icons/fa'; // Import the chevron icon
 
 const ProjectsSection = styled.section`
   padding: 4rem 2rem;
@@ -57,11 +58,12 @@ const ProjectCardTitle = styled.a`
   }
 `;
 
-const DropdownIcon = styled.span`
+const DropdownIcon = styled(FaChevronDown)` // Use FaChevronDown as the icon
   font-size: 1.5rem;
   transform: ${({ isOpen }) => (isOpen ? 'rotate(180deg)' : 'rotate(0)')};
   transition: transform 0.3s ease;
 `;
+
 
 const ProjectDescription = styled(motion.div)`
   font-size: 1rem;

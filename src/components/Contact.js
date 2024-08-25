@@ -46,7 +46,7 @@ const Contact = () => {
         <ContactTitle>Contact Me</ContactTitle>
         <ContactText>
           email: {' '}
-          <ContactLink href="mailto:your.email@example.com">kirtibajaj333@gmail.com and</ContactLink>
+          <ContactLink href="mailto:your.email@example.com">kirtibajaj333@gmail.com</ContactLink>
         </ContactText>
       </ContactContent>
     </ContactSection>
