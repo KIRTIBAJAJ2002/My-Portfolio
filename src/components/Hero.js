@@ -75,9 +75,11 @@ const Hero = () => (
         learning techniques to drive impactful solutions. With a strong foundation in data analysis and visualization
         tools such as Power BI and machine learning (NLP).
       </SummaryText>
-      <ResumeButton href="/Kirti_J_Bajaj_Resume.pdf" download="Kirti Resume.pdf">
-        Download Resume
+      <ResumeButton href="/My-Portfolio/Kirti_Resume.pdf" download="Kirti Resume.pdf">
+      Download Resume
       </ResumeButton>
+
+
     </HeroContent>
   </HeroSection>
 );
